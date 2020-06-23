@@ -1,0 +1,19 @@
+
+experiment DIRECTED-FULLTIME
+
+fulltime 5000
+eval-init 0
+
+repeated-executions 2
+
+maps-directory "maps"
+
+map "map_a.ymf"
+map-societies: 1, 1, 3, 3, 9, 9	
+	ag01 0
+	ag01 3
+	ag01 3 ag02 2 ag03 7  
+	ag01 3 ag02 2 ag03 7
+	ag01 4 ag02 3 ag03 2 ag04 7 ag05 4 ag06 7 ag07 6 ag08 8 ag09 3
+	ag01 1 ag02 2 ag03 3 ag04 2 ag05 7 ag06 6 ag07 3 ag08 4 ag09 5
+

@@ -1,0 +1,36 @@
+
+OPÇAO 1: uso simples, sem verificações de limites de percepção, etc.
+
+ - deixar a cargo do pesquisador fazer o controle e reportar fielmente
+   . pesquisadores não estão fazendo um "joguinho" (eles devem ser 
+    sérios em suas afirmações)
+    
+ - menos processamento no servidor
+ 
+ - porém (se for remoto), pode gerar overhead de comunicação 
+
+
+
+OPCAO 2: controlar ranges das percepções
+
+ - três tipos de medidas de distância
+   . quantidade de arestas
+   . distâncias (pelos menores caminhos)
+   . distância, baseada nas coordenadas 2D
+   
+ - passar classe opcional ao conector para restringir as percepções 
+   . se não instanciar, o default é ver tudo 
+   . se instanciar com o construtor default, não vê nada
+   
+- exemplo de código
+
+	PerceptionRangeSettings perc = new PerceptionRangeSettings()
+	perc.setGraphRange(10, EDGE_COUNT)
+	perc.setNodeInfoRange(10, EDGE_LENGTH)
+	perc.setMessageRange(10, DISTANCE_2D)
+	perc.setSocietyRange(2, DISTANCE_2D)
+
+  elementos não percebidos: retorna null ou -1
+  
+
+

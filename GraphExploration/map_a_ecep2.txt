@@ -1,0 +1,1739 @@
+ALGORITHM: DfsExplorer-3-ECEP-v2
+
+[Agent 0]: START
+[Agent 1]: START
+[Agent 2]: START
+[Agent 3]: START
+[Agent 0]: IN NODE 0, turn 1
+[Agent 0]: - navdata: [ -1 -1 -1 ]
+[Agent 0]: - forward (ref-port #0, eff-port #0)
+[Agent 1]: IN NODE 15, turn 1
+[Agent 1]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 1]: - forward (ref-port #0, eff-port #0)
+[Agent 2]: IN NODE 8, turn 1
+[Agent 2]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 2]: - forward (ref-port #0, eff-port #0)
+[Agent 3]: IN NODE 35, turn 1
+[Agent 3]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 3]: - forward (ref-port #0, eff-port #0)
+[Agent 0]: IN NODE 23, turn 2
+[Agent 0]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 0)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 40, turn 2
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 15)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 2, turn 2
+[Agent 2]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 2]: - first time
+[Agent 2]: - navData += (ref-port #0 -> node 8)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 7, turn 2
+[Agent 3]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 35)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 37, turn 3
+[Agent 0]: - navdata: [ -1 -1 -1 -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 23)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 21, turn 3
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 40)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 11, turn 3
+[Agent 2]: - navdata: [ -1 -1 -1 ]
+[Agent 2]: - first time
+[Agent 2]: - navData += (ref-port #0 -> node 2)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 6, turn 3
+[Agent 3]: - navdata: [ -1 -1 -1 -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 7)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 34, turn 4
+[Agent 0]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 37)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 47, turn 4
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 21)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 28, turn 4
+[Agent 2]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 2]: - first time
+[Agent 2]: - navData += (ref-port #0 -> node 11)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 24, turn 4
+[Agent 3]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 6)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 23, turn 5
+[Agent 0]: - navdata: [ 0 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 31, turn 5
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 47)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 16, turn 5
+[Agent 2]: - navdata: [ -1 -1 -1 ]
+[Agent 2]: - first time
+[Agent 2]: - navData += (ref-port #0 -> node 28)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 7, turn 5
+[Agent 3]: - navdata: [ 35 -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 34, turn 6
+[Agent 0]: - navdata: [ 37 -2 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 23)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 10, turn 6
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 31)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 27, turn 6
+[Agent 2]: - navdata: [ -1 -1 -1 ]
+[Agent 2]: - first time
+[Agent 2]: - navData += (ref-port #0 -> node 16)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 24, turn 6
+[Agent 3]: - navdata: [ 6 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 7)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 46, turn 7
+[Agent 0]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 34)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 43, turn 7
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 10)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 28, turn 7
+[Agent 2]: - navdata: [ 11 -2 -1 -1 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 17, turn 7
+[Agent 3]: - navdata: [ -1 -1 -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 24)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 37, turn 8
+[Agent 0]: - navdata: [ 23 -2 -1 -1 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 26, turn 8
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 43)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 27, turn 8
+[Agent 2]: - navdata: [ 16 -2 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 28)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 31, turn 8
+[Agent 3]: - navdata: [ 47 -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 46, turn 9
+[Agent 0]: - navdata: [ 34 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 37)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 42, turn 9
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 26)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 11, turn 9
+[Agent 2]: - navdata: [ 2 -2 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 17, turn 9
+[Agent 3]: - navdata: [ 24 -2 -1 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 31)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 18, turn 10
+[Agent 0]: - navdata: [ -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 46)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 47, turn 10
+[Agent 1]: - navdata: [ 21 -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 27, turn 10
+[Agent 2]: - navdata: [ 16 28 -2 ]
+[Agent 2]: - navData += (ref-port #2 -> node 11)
+[Agent 2]: - complete, navdata: [ 16 28 11 ]
+[Agent 2]: - backtrack (ref-port #0, eff-port #1)
+[Agent 3]: IN NODE 44, turn 10
+[Agent 3]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 17)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 4, turn 11
+[Agent 0]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 18)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 42, turn 11
+[Agent 1]: - navdata: [ 26 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 47)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 16, turn 11
+[Agent 2]: - navdata: [ 28 -2 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 27)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 25, turn 11
+[Agent 3]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 44)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 20, turn 12
+[Agent 0]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 4)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 10, turn 12
+[Agent 1]: - navdata: [ 31 -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 18, turn 12
+[Agent 2]: - navdata: [ 46 -2 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 32, turn 12
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 25)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 8, turn 13
+[Agent 0]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 42, turn 13
+[Agent 1]: - navdata: [ 26 47 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 10)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 16, turn 13
+[Agent 2]: - navdata: [ 28 27 -2 ]
+[Agent 2]: - navData += (ref-port #2 -> node 18)
+[Agent 2]: - complete, navdata: [ 28 27 18 ]
+[Agent 2]: - backtrack (ref-port #0, eff-port #1)
+[Agent 3]: IN NODE 9, turn 13
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 32)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 20, turn 14
+[Agent 0]: - navdata: [ 4 -2 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 8)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 21, turn 14
+[Agent 1]: - navdata: [ 40 -2 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 28, turn 14
+[Agent 2]: - navdata: [ 11 -2 -1 -1 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 16)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 29, turn 14
+[Agent 3]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 9)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 28, turn 15
+[Agent 0]: - navdata: [ 11 16 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 42, turn 15
+[Agent 1]: - navdata: [ 26 47 10 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 21)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 20, turn 15
+[Agent 2]: - navdata: [ 4 8 -2 -1 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 38, turn 15
+[Agent 3]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 29)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 20, turn 16
+[Agent 0]: - navdata: [ 4 8 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 28)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 22, turn 16
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 42)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 28, turn 16
+[Agent 2]: - navdata: [ 11 16 -2 -1 -1 ]
+[Agent 2]: - navData += (ref-port #2 -> node 20)
+[Agent 2]: - forward (ref-port #3, eff-port #1)
+[Agent 3]: IN NODE 35, turn 16
+[Agent 3]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 45, turn 17
+[Agent 0]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 20)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 30, turn 17
+[Agent 1]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 22)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 27, turn 17
+[Agent 2]: - navdata: [ 16 28 11 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 38, turn 17
+[Agent 3]: - navdata: [ 29 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 35)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 34, turn 18
+[Agent 0]: - navdata: [ 37 23 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 2, turn 18
+[Agent 1]: - navdata: [ 8 -2 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 28, turn 18
+[Agent 2]: - navdata: [ 11 16 20 -2 -1 ]
+[Agent 2]: - navData += (ref-port #3 -> node 27)
+[Agent 2]: - forward (ref-port #4, eff-port #1)
+[Agent 3]: IN NODE 40, turn 18
+[Agent 3]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 45, turn 19
+[Agent 0]: - navdata: [ 20 -2 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 34)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 30, turn 19
+[Agent 1]: - navdata: [ 22 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 2)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 4, turn 19
+[Agent 2]: - navdata: [ 18 -2 -1 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 38, turn 19
+[Agent 3]: - navdata: [ 29 35 -2 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 40)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 39, turn 20
+[Agent 0]: - navdata: [ -1 -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 45)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 3, turn 20
+[Agent 1]: - navdata: [ -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 30)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 28, turn 20
+[Agent 2]: - navdata: [ 11 16 20 27 -2 ]
+[Agent 2]: - navData += (ref-port #4 -> node 4)
+[Agent 2]: - complete, navdata: [ 11 16 20 27 4 ]
+[Agent 2]: - backtrack (ref-port #0, eff-port #1)
+[Agent 3]: IN NODE 15, turn 20
+[Agent 3]: - navdata: [ -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 1, turn 21
+[Agent 0]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 39)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 49, turn 21
+[Agent 1]: - navdata: [ -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 3)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 11, turn 21
+[Agent 2]: - navdata: [ 2 -2 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 28)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 38, turn 21
+[Agent 3]: - navdata: [ 29 35 40 -2 ]
+[Agent 3]: - navData += (ref-port #3 -> node 15)
+[Agent 3]: - complete, navdata: [ 29 35 40 15 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 43, turn 22
+[Agent 0]: - navdata: [ 10 -2 -1 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 15, turn 22
+[Agent 1]: - navdata: [ -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 27, turn 22
+[Agent 2]: - navdata: [ 16 28 11 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 29, turn 22
+[Agent 3]: - navdata: [ 9 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 38)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 1, turn 23
+[Agent 0]: - navdata: [ 39 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 43)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 49, turn 23
+[Agent 1]: - navdata: [ 3 -2 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 15)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 11, turn 23
+[Agent 2]: - navdata: [ 2 28 -2 ]
+[Agent 2]: - navData += (ref-port #2 -> node 27)
+[Agent 2]: - complete, navdata: [ 2 28 27 ]
+[Agent 2]: - backtrack (ref-port #0, eff-port #1)
+[Agent 3]: IN NODE 35, turn 23
+[Agent 3]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 26, turn 24
+[Agent 0]: - navdata: [ 43 -2 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 29, turn 24
+[Agent 1]: - navdata: [ 9 38 -2 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 2, turn 24
+[Agent 2]: - navdata: [ 8 -2 -1 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 11)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 29, turn 24
+[Agent 3]: - navdata: [ 9 38 -2 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 35)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 1, turn 25
+[Agent 0]: - navdata: [ 39 43 -2 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 26)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 49, turn 25
+[Agent 1]: - navdata: [ 3 15 -2 ]
+[Agent 1]: - navData += (ref-port #2 -> node 29)
+[Agent 1]: - complete, navdata: [ 3 15 29 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 20, turn 25
+[Agent 2]: - navdata: [ 4 8 28 -2 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 49, turn 25
+[Agent 3]: - navdata: [ 3 15 29 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 47, turn 26
+[Agent 0]: - navdata: [ 21 -2 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 3, turn 26
+[Agent 1]: - navdata: [ 30 -2 ]
+[Agent 1]: - navData += (ref-port #1 -> node 49)
+[Agent 1]: - complete, navdata: [ 30 49 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 2, turn 26
+[Agent 2]: - navdata: [ 8 11 -2 -1 ]
+[Agent 2]: - navData += (ref-port #2 -> node 20)
+[Agent 2]: - forward (ref-port #3, eff-port #1)
+[Agent 3]: IN NODE 29, turn 26
+[Agent 3]: - navdata: [ 9 38 35 -2 ]
+[Agent 3]: - navData += (ref-port #3 -> node 49)
+[Agent 3]: - complete, navdata: [ 9 38 35 49 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 1, turn 27
+[Agent 0]: - navdata: [ 39 43 26 -2 ]
+[Agent 0]: - navData += (ref-port #3 -> node 47)
+[Agent 0]: - complete, navdata: [ 39 43 26 47 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 30, turn 27
+[Agent 1]: - navdata: [ 22 2 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 3)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 30, turn 27
+[Agent 2]: - navdata: [ 22 2 3 -2 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 9, turn 27
+[Agent 3]: - navdata: [ 32 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 29)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 39, turn 28
+[Agent 0]: - navdata: [ 45 -2 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 1)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 8, turn 28
+[Agent 1]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 2, turn 28
+[Agent 2]: - navdata: [ 8 11 20 -2 ]
+[Agent 2]: - navData += (ref-port #3 -> node 30)
+[Agent 2]: - complete, navdata: [ 8 11 20 30 ]
+[Agent 2]: - backtrack (ref-port #0, eff-port #1)
+[Agent 3]: IN NODE 35, turn 28
+[Agent 3]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 34, turn 29
+[Agent 0]: - navdata: [ 37 23 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 30, turn 29
+[Agent 1]: - navdata: [ 22 2 3 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 8)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 29
+[Agent 2]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 2]: - navData += (ref-port #0 -> node 2)
+[Agent 2]: - forward (ref-port #1, eff-port #1)
+[Agent 3]: IN NODE 9, turn 29
+[Agent 3]: - navdata: [ 32 29 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 35)
+[Agent 3]: - complete, navdata: [ 32 29 35 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 39, turn 30
+[Agent 0]: - navdata: [ 45 1 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 34)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 21, turn 30
+[Agent 1]: - navdata: [ 40 -2 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 45, turn 30
+[Agent 2]: - navdata: [ 20 34 -2 -1 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 32, turn 30
+[Agent 3]: - navdata: [ 25 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 9)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 37, turn 31
+[Agent 0]: - navdata: [ 23 -2 -1 -1 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 30, turn 31
+[Agent 1]: - navdata: [ 22 2 3 8 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 21)
+[Agent 1]: - complete, navdata: [ 22 2 3 8 21 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 31
+[Agent 2]: - navdata: [ 2 -2 -1 -1 -1 ]
+[Agent 2]: - navData += (ref-port #1 -> node 45)
+[Agent 2]: - forward (ref-port #2, eff-port #1)
+[Agent 3]: IN NODE 14, turn 31
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 32)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 39, turn 32
+[Agent 0]: - navdata: [ 45 1 34 -2 -1 ]
+[Agent 0]: - navData += (ref-port #3 -> node 37)
+[Agent 0]: - forward (ref-port #4, eff-port #1)
+[Agent 1]: IN NODE 22, turn 32
+[Agent 1]: - navdata: [ 42 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 30)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 20, turn 32
+[Agent 2]: - navdata: [ 4 8 28 -2 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 5, turn 32
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 14)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 43, turn 33
+[Agent 0]: - navdata: [ 10 -2 -1 -1 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 10, turn 33
+[Agent 1]: - navdata: [ 31 -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 33
+[Agent 2]: - navdata: [ 2 45 -2 -1 -1 ]
+[Agent 2]: - navData += (ref-port #2 -> node 20)
+[Agent 2]: - forward (ref-port #3, eff-port #1)
+[Agent 3]: IN NODE 6, turn 33
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 39, turn 34
+[Agent 0]: - navdata: [ 45 1 34 37 -2 ]
+[Agent 0]: - navData += (ref-port #4 -> node 43)
+[Agent 0]: - complete, navdata: [ 45 1 34 37 43 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 22, turn 34
+[Agent 1]: - navdata: [ 42 30 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 10)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 21, turn 34
+[Agent 2]: - navdata: [ 40 -2 -1 -1 -1 -1 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 5, turn 34
+[Agent 3]: - navdata: [ 14 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 6)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 45, turn 35
+[Agent 0]: - navdata: [ 20 34 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 39)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 15, turn 35
+[Agent 1]: - navdata: [ -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 35
+[Agent 2]: - navdata: [ 2 45 20 -2 -1 ]
+[Agent 2]: - navData += (ref-port #3 -> node 21)
+[Agent 2]: - forward (ref-port #4, eff-port #1)
+[Agent 3]: IN NODE 19, turn 35
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 5)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 4, turn 36
+[Agent 0]: - navdata: [ 18 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 22, turn 36
+[Agent 1]: - navdata: [ 42 30 10 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 15)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 30, turn 36
+[Agent 2]: - navdata: [ 22 2 3 8 21 ]
+[Agent 2]: - already visited
+[Agent 2]: - backtrack (eff-port #0)
+[Agent 3]: IN NODE 6, turn 36
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 45, turn 37
+[Agent 0]: - navdata: [ 20 34 39 -2 -1 ]
+[Agent 0]: - navData += (ref-port #3 -> node 4)
+[Agent 0]: - forward (ref-port #4, eff-port #1)
+[Agent 1]: IN NODE 21, turn 37
+[Agent 1]: - navdata: [ 40 -2 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 37
+[Agent 2]: - navdata: [ 2 45 20 21 -2 ]
+[Agent 2]: - navData += (ref-port #4 -> node 30)
+[Agent 2]: - complete, navdata: [ 2 45 20 21 30 ]
+[Agent 2]: => FINISHED ALL! Turn 37
+[Agent 3]: IN NODE 19, turn 37
+[Agent 3]: - navdata: [ 5 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 6)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 8, turn 38
+[Agent 0]: - navdata: [ 2 45 20 21 30 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 22, turn 38
+[Agent 1]: - navdata: [ 42 30 10 15 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 21)
+[Agent 1]: - complete, navdata: [ 42 30 10 15 21 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 38
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 25, turn 38
+[Agent 3]: - navdata: [ 44 -2 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 45, turn 39
+[Agent 0]: - navdata: [ 20 34 39 4 -2 ]
+[Agent 0]: - navData += (ref-port #4 -> node 8)
+[Agent 0]: - complete, navdata: [ 20 34 39 4 8 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 42, turn 39
+[Agent 1]: - navdata: [ 26 47 10 21 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 22)
+[Agent 1]: - complete, navdata: [ 26 47 10 21 22 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 39
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 19, turn 39
+[Agent 3]: - navdata: [ 5 6 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 25)
+[Agent 3]: - complete, navdata: [ 5 6 25 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 20, turn 40
+[Agent 0]: - navdata: [ 4 8 28 -2 -1 ]
+[Agent 0]: - navData += (ref-port #3 -> node 45)
+[Agent 0]: - forward (ref-port #4, eff-port #1)
+[Agent 1]: IN NODE 26, turn 40
+[Agent 1]: - navdata: [ 43 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 42)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 40
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 5, turn 40
+[Agent 3]: - navdata: [ 14 6 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 19)
+[Agent 3]: - complete, navdata: [ 14 6 19 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 2, turn 41
+[Agent 0]: - navdata: [ 8 11 20 30 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 31, turn 41
+[Agent 1]: - navdata: [ 47 -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 41
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 14, turn 41
+[Agent 3]: - navdata: [ 32 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 5)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 20, turn 42
+[Agent 0]: - navdata: [ 4 8 28 45 -2 ]
+[Agent 0]: - navData += (ref-port #4 -> node 2)
+[Agent 0]: - complete, navdata: [ 4 8 28 45 2 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 26, turn 42
+[Agent 1]: - navdata: [ 43 42 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 31)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 42
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 7, turn 42
+[Agent 3]: - navdata: [ 35 -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 4, turn 43
+[Agent 0]: - navdata: [ 18 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 20)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 1, turn 43
+[Agent 1]: - navdata: [ 39 43 26 47 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 43
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 14, turn 43
+[Agent 3]: - navdata: [ 32 5 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 7)
+[Agent 3]: - complete, navdata: [ 32 5 7 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 28, turn 44
+[Agent 0]: - navdata: [ 11 16 20 27 4 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 26, turn 44
+[Agent 1]: - navdata: [ 43 42 31 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 1)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 44
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 32, turn 44
+[Agent 3]: - navdata: [ 25 9 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 14)
+[Agent 3]: - complete, navdata: [ 25 9 14 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 4, turn 45
+[Agent 0]: - navdata: [ 18 20 -2 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 28)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 17, turn 45
+[Agent 1]: - navdata: [ 24 31 -2 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 45
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 25, turn 45
+[Agent 3]: - navdata: [ 44 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 32)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 45, turn 46
+[Agent 0]: - navdata: [ 20 34 39 4 8 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 26, turn 46
+[Agent 1]: - navdata: [ 43 42 31 1 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 17)
+[Agent 1]: - complete, navdata: [ 43 42 31 1 17 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 46
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 46
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 4, turn 47
+[Agent 0]: - navdata: [ 18 20 28 -2 ]
+[Agent 0]: - navData += (ref-port #3 -> node 45)
+[Agent 0]: - complete, navdata: [ 18 20 28 45 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 43, turn 47
+[Agent 1]: - navdata: [ 10 -2 -1 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 26)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 47
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 25, turn 47
+[Agent 3]: - navdata: [ 44 32 -2 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 6)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 18, turn 48
+[Agent 0]: - navdata: [ 46 -2 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 4)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 37, turn 48
+[Agent 1]: - navdata: [ 23 -2 -1 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 48
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 19, turn 48
+[Agent 3]: - navdata: [ 5 6 25 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 16, turn 49
+[Agent 0]: - navdata: [ 28 27 18 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 43, turn 49
+[Agent 1]: - navdata: [ 10 26 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 37)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 49
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 25, turn 49
+[Agent 3]: - navdata: [ 44 32 6 -2 ]
+[Agent 3]: - navData += (ref-port #3 -> node 19)
+[Agent 3]: - complete, navdata: [ 44 32 6 19 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 18, turn 50
+[Agent 0]: - navdata: [ 46 4 -2 ]
+[Agent 0]: - navData += (ref-port #2 -> node 16)
+[Agent 0]: - complete, navdata: [ 46 4 16 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 39, turn 50
+[Agent 1]: - navdata: [ 45 1 34 37 43 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 50
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 44, turn 50
+[Agent 3]: - navdata: [ 17 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 25)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 46, turn 51
+[Agent 0]: - navdata: [ 34 37 -2 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 18)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 43, turn 51
+[Agent 1]: - navdata: [ 10 26 37 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 39)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 51
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 33, turn 51
+[Agent 3]: - navdata: [ -1 -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 44)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 23, turn 52
+[Agent 0]: - navdata: [ 0 -2 -1 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 41, turn 52
+[Agent 1]: - navdata: [ -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 43)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 8, turn 52
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 13, turn 52
+[Agent 3]: - navdata: [ -1 -1 ]
+[Agent 3]: - first time
+[Agent 3]: - navData += (ref-port #0 -> node 33)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 46, turn 53
+[Agent 0]: - navdata: [ 34 37 18 -2 ]
+[Agent 0]: - navData += (ref-port #3 -> node 23)
+[Agent 0]: - complete, navdata: [ 34 37 18 23 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 13, turn 53
+[Agent 1]: - navdata: [ 33 -2 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 53
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 41, turn 53
+[Agent 3]: - navdata: [ 43 -2 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 34, turn 54
+[Agent 0]: - navdata: [ 37 23 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 46)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 41, turn 54
+[Agent 1]: - navdata: [ 43 -2 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 13)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 54
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 13, turn 54
+[Agent 3]: - navdata: [ 33 -2 ]
+[Agent 3]: - navData += (ref-port #1 -> node 41)
+[Agent 3]: - complete, navdata: [ 33 41 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 39, turn 55
+[Agent 0]: - navdata: [ 45 1 34 37 43 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 36, turn 55
+[Agent 1]: - navdata: [ -1 -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 41)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 8, turn 55
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 33, turn 55
+[Agent 3]: - navdata: [ 44 -2 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 13)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 34, turn 56
+[Agent 0]: - navdata: [ 37 23 46 -2 -1 ]
+[Agent 0]: - navData += (ref-port #3 -> node 39)
+[Agent 0]: - forward (ref-port #4, eff-port #1)
+[Agent 1]: IN NODE 48, turn 56
+[Agent 1]: - navdata: [ -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 36)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 8, turn 56
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 56
+[Agent 3]: - navdata: [ 24 31 -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 45, turn 57
+[Agent 0]: - navdata: [ 20 34 39 4 8 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 0, turn 57
+[Agent 1]: - navdata: [ -2 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 57
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 33, turn 57
+[Agent 3]: - navdata: [ 44 13 -2 ]
+[Agent 3]: - navData += (ref-port #2 -> node 17)
+[Agent 3]: - complete, navdata: [ 44 13 17 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 34, turn 58
+[Agent 0]: - navdata: [ 37 23 46 39 -2 ]
+[Agent 0]: - navData += (ref-port #4 -> node 45)
+[Agent 0]: - complete, navdata: [ 37 23 46 39 45 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 48, turn 58
+[Agent 1]: - navdata: [ 36 -2 ]
+[Agent 1]: - navData += (ref-port #1 -> node 0)
+[Agent 1]: - complete, navdata: [ 36 0 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 58
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 44, turn 58
+[Agent 3]: - navdata: [ 17 25 -2 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 33)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 37, turn 59
+[Agent 0]: - navdata: [ 23 -2 -1 -1 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 34)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 36, turn 59
+[Agent 1]: - navdata: [ 41 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 48)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 59
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 59
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 36, turn 60
+[Agent 0]: - navdata: [ 41 48 -2 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 37, turn 60
+[Agent 1]: - navdata: [ 23 34 -2 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 60
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 44, turn 60
+[Agent 3]: - navdata: [ 17 25 33 -2 ]
+[Agent 3]: - navData += (ref-port #3 -> node 6)
+[Agent 3]: - complete, navdata: [ 17 25 33 6 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 37, turn 61
+[Agent 0]: - navdata: [ 23 34 -2 -1 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 36)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 36, turn 61
+[Agent 1]: - navdata: [ 41 48 -2 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 37)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 61
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 61
+[Agent 3]: - navdata: [ 24 31 -2 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 44)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 39, turn 62
+[Agent 0]: - navdata: [ 45 1 34 37 43 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 12, turn 62
+[Agent 1]: - navdata: [ -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 36)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 8, turn 62
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 33, turn 62
+[Agent 3]: - navdata: [ 44 13 17 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 37, turn 63
+[Agent 0]: - navdata: [ 23 34 36 -2 -1 -1 -1 ]
+[Agent 0]: - navData += (ref-port #3 -> node 39)
+[Agent 0]: - forward (ref-port #4, eff-port #1)
+[Agent 1]: IN NODE 37, turn 63
+[Agent 1]: - navdata: [ 23 34 36 39 -2 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 63
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 63
+[Agent 3]: - navdata: [ 24 31 44 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #3 -> node 33)
+[Agent 3]: - forward (ref-port #4, eff-port #1)
+[Agent 0]: IN NODE 46, turn 64
+[Agent 0]: - navdata: [ 34 37 18 23 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 12, turn 64
+[Agent 1]: - navdata: [ 36 -2 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 37)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 64
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 64
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 37, turn 65
+[Agent 0]: - navdata: [ 23 34 36 39 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #4 -> node 46)
+[Agent 0]: - forward (ref-port #5, eff-port #1)
+[Agent 1]: IN NODE 0, turn 65
+[Agent 1]: - navdata: [ -2 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 65
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 65
+[Agent 3]: - navdata: [ 24 31 44 33 -2 -1 ]
+[Agent 3]: - navData += (ref-port #4 -> node 6)
+[Agent 3]: - forward (ref-port #5, eff-port #1)
+[Agent 0]: IN NODE 43, turn 66
+[Agent 0]: - navdata: [ 10 26 37 39 -2 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 12, turn 66
+[Agent 1]: - navdata: [ 36 37 -2 ]
+[Agent 1]: - navData += (ref-port #2 -> node 0)
+[Agent 1]: - complete, navdata: [ 36 37 0 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 66
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 26, turn 66
+[Agent 3]: - navdata: [ 43 42 31 1 17 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 37, turn 67
+[Agent 0]: - navdata: [ 23 34 36 39 46 -2 -1 ]
+[Agent 0]: - navData += (ref-port #5 -> node 43)
+[Agent 0]: - forward (ref-port #6, eff-port #1)
+[Agent 1]: IN NODE 36, turn 67
+[Agent 1]: - navdata: [ 41 48 37 -2 ]
+[Agent 1]: - navData += (ref-port #3 -> node 12)
+[Agent 1]: - complete, navdata: [ 41 48 37 12 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 67
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 67
+[Agent 3]: - navdata: [ 24 31 44 33 6 -2 ]
+[Agent 3]: - navData += (ref-port #5 -> node 26)
+[Agent 3]: - complete, navdata: [ 24 31 44 33 6 26 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 12, turn 68
+[Agent 0]: - navdata: [ 36 37 0 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 41, turn 68
+[Agent 1]: - navdata: [ 43 13 -2 ]
+[Agent 1]: - navData += (ref-port #2 -> node 36)
+[Agent 1]: - complete, navdata: [ 43 13 36 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 68
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 24, turn 68
+[Agent 3]: - navdata: [ 6 7 -2 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 17)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 37, turn 69
+[Agent 0]: - navdata: [ 23 34 36 39 46 43 -2 ]
+[Agent 0]: - navData += (ref-port #6 -> node 12)
+[Agent 0]: - complete, navdata: [ 23 34 36 39 46 43 12 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 43, turn 69
+[Agent 1]: - navdata: [ 10 26 37 39 -2 -1 ]
+[Agent 1]: - navData += (ref-port #4 -> node 41)
+[Agent 1]: - forward (ref-port #5, eff-port #1)
+[Agent 2]: IN NODE 8, turn 69
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 31, turn 69
+[Agent 3]: - navdata: [ 47 -2 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 23, turn 70
+[Agent 0]: - navdata: [ 0 -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 37)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 1, turn 70
+[Agent 1]: - navdata: [ 39 43 26 47 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 70
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 24, turn 70
+[Agent 3]: - navdata: [ 6 7 17 -2 ]
+[Agent 3]: - navData += (ref-port #3 -> node 31)
+[Agent 3]: - complete, navdata: [ 6 7 17 31 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 34, turn 71
+[Agent 0]: - navdata: [ 37 23 46 39 45 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 43, turn 71
+[Agent 1]: - navdata: [ 10 26 37 39 41 -2 ]
+[Agent 1]: - navData += (ref-port #5 -> node 1)
+[Agent 1]: - complete, navdata: [ 10 26 37 39 41 1 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 71
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 71
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 24)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 23, turn 72
+[Agent 0]: - navdata: [ 0 37 -2 -1 ]
+[Agent 0]: - navData += (ref-port #2 -> node 34)
+[Agent 0]: - forward (ref-port #3, eff-port #1)
+[Agent 1]: IN NODE 10, turn 72
+[Agent 1]: - navdata: [ 31 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 43)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 72
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 25, turn 72
+[Agent 3]: - navdata: [ 44 32 6 19 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 46, turn 73
+[Agent 0]: - navdata: [ 34 37 18 23 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 22, turn 73
+[Agent 1]: - navdata: [ 42 30 10 15 21 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 73
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 73
+[Agent 3]: - navdata: [ 7 24 -2 -1 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 25)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 23, turn 74
+[Agent 0]: - navdata: [ 0 37 34 -2 ]
+[Agent 0]: - navData += (ref-port #3 -> node 46)
+[Agent 0]: - complete, navdata: [ 0 37 34 46 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 10, turn 74
+[Agent 1]: - navdata: [ 31 43 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 22)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 74
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 19, turn 74
+[Agent 3]: - navdata: [ 5 6 25 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 75
+[Agent 0]: - navdata: [ -2 -1 -1 ]
+[Agent 0]: - navData += (ref-port #0 -> node 23)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 40, turn 75
+[Agent 1]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 75
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 75
+[Agent 3]: - navdata: [ 7 24 25 -2 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #3 -> node 19)
+[Agent 3]: - forward (ref-port #4, eff-port #1)
+[Agent 0]: IN NODE 12, turn 76
+[Agent 0]: - navdata: [ 36 37 0 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 10, turn 76
+[Agent 1]: - navdata: [ 31 43 22 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 40)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 76
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 5, turn 76
+[Agent 3]: - navdata: [ 14 6 19 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 77
+[Agent 0]: - navdata: [ 23 -2 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 12)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 42, turn 77
+[Agent 1]: - navdata: [ 26 47 10 21 22 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 77
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 77
+[Agent 3]: - navdata: [ 7 24 25 19 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #4 -> node 5)
+[Agent 3]: - forward (ref-port #5, eff-port #1)
+[Agent 0]: IN NODE 48, turn 78
+[Agent 0]: - navdata: [ 36 0 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 10, turn 78
+[Agent 1]: - navdata: [ 31 43 22 40 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 42)
+[Agent 1]: - complete, navdata: [ 31 43 22 40 42 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 78
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 44, turn 78
+[Agent 3]: - navdata: [ 17 25 33 6 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 79
+[Agent 0]: - navdata: [ 23 12 -2 ]
+[Agent 0]: - navData += (ref-port #2 -> node 48)
+[Agent 0]: - complete, navdata: [ 23 12 48 ]
+[Agent 0]: => FINISHED ALL! Turn 79
+[Agent 1]: IN NODE 31, turn 79
+[Agent 1]: - navdata: [ 47 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 10)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 79
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 79
+[Agent 3]: - navdata: [ 7 24 25 19 5 -2 -1 ]
+[Agent 3]: - navData += (ref-port #5 -> node 44)
+[Agent 3]: - forward (ref-port #6, eff-port #1)
+[Agent 0]: IN NODE 0, turn 80
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 17, turn 80
+[Agent 1]: - navdata: [ 24 31 44 33 6 26 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 80
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 17, turn 80
+[Agent 3]: - navdata: [ 24 31 44 33 6 26 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 81
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 31, turn 81
+[Agent 1]: - navdata: [ 47 10 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 17)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 81
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 6, turn 81
+[Agent 3]: - navdata: [ 7 24 25 19 5 44 -2 ]
+[Agent 3]: - navData += (ref-port #6 -> node 17)
+[Agent 3]: - complete, navdata: [ 7 24 25 19 5 44 17 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 0, turn 82
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 24, turn 82
+[Agent 1]: - navdata: [ 6 7 17 31 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 82
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 7, turn 82
+[Agent 3]: - navdata: [ 35 -2 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 6)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 0, turn 83
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 31, turn 83
+[Agent 1]: - navdata: [ 47 10 17 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 24)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 83
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 24, turn 83
+[Agent 3]: - navdata: [ 6 7 17 31 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 84
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 26, turn 84
+[Agent 1]: - navdata: [ 43 42 31 1 17 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 84
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 7, turn 84
+[Agent 3]: - navdata: [ 35 6 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 24)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 0, turn 85
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 31, turn 85
+[Agent 1]: - navdata: [ 47 10 17 24 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 26)
+[Agent 1]: - complete, navdata: [ 47 10 17 24 26 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 85
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 14, turn 85
+[Agent 3]: - navdata: [ 32 5 7 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 86
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 47, turn 86
+[Agent 1]: - navdata: [ 21 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 31)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 86
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 7, turn 86
+[Agent 3]: - navdata: [ 35 6 24 -2 -1 ]
+[Agent 3]: - navData += (ref-port #3 -> node 14)
+[Agent 3]: - forward (ref-port #4, eff-port #1)
+[Agent 0]: IN NODE 0, turn 87
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 87
+[Agent 1]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 87
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 40, turn 87
+[Agent 3]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 88
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 47, turn 88
+[Agent 1]: - navdata: [ 21 31 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 40)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 88
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 7, turn 88
+[Agent 3]: - navdata: [ 35 6 24 14 -2 ]
+[Agent 3]: - navData += (ref-port #4 -> node 40)
+[Agent 3]: - complete, navdata: [ 35 6 24 14 40 ]
+[Agent 3]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 0, turn 89
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 42, turn 89
+[Agent 1]: - navdata: [ 26 47 10 21 22 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 89
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 89
+[Agent 3]: - navdata: [ -2 -1 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #0 -> node 7)
+[Agent 3]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 0, turn 90
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 47, turn 90
+[Agent 1]: - navdata: [ 21 31 40 -2 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 42)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 90
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 9, turn 90
+[Agent 3]: - navdata: [ 32 29 35 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 91
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 1, turn 91
+[Agent 1]: - navdata: [ 39 43 26 47 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 91
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 91
+[Agent 3]: - navdata: [ 7 -2 -1 -1 -1 ]
+[Agent 3]: - navData += (ref-port #1 -> node 9)
+[Agent 3]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 0, turn 92
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 47, turn 92
+[Agent 1]: - navdata: [ 21 31 40 42 -2 ]
+[Agent 1]: - navData += (ref-port #4 -> node 1)
+[Agent 1]: - complete, navdata: [ 21 31 40 42 1 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 92
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 29, turn 92
+[Agent 3]: - navdata: [ 9 38 35 49 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 93
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 21, turn 93
+[Agent 1]: - navdata: [ 40 -2 -1 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 47)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 93
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 93
+[Agent 3]: - navdata: [ 7 9 -2 -1 -1 ]
+[Agent 3]: - navData += (ref-port #2 -> node 29)
+[Agent 3]: - forward (ref-port #3, eff-port #1)
+[Agent 0]: IN NODE 0, turn 94
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 42, turn 94
+[Agent 1]: - navdata: [ 26 47 10 21 22 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 94
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 40, turn 94
+[Agent 3]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 95
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 21, turn 95
+[Agent 1]: - navdata: [ 40 47 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 42)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 95
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 95
+[Agent 3]: - navdata: [ 7 9 29 -2 -1 ]
+[Agent 3]: - navData += (ref-port #3 -> node 40)
+[Agent 3]: - forward (ref-port #4, eff-port #1)
+[Agent 0]: IN NODE 0, turn 96
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 22, turn 96
+[Agent 1]: - navdata: [ 42 30 10 15 21 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 96
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 38, turn 96
+[Agent 3]: - navdata: [ 29 35 40 15 ]
+[Agent 3]: - already visited
+[Agent 3]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 97
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 21, turn 97
+[Agent 1]: - navdata: [ 40 47 42 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 22)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 97
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 97
+[Agent 3]: - navdata: [ 7 9 29 40 -2 ]
+[Agent 3]: - navData += (ref-port #4 -> node 38)
+[Agent 3]: - complete, navdata: [ 7 9 29 40 38 ]
+[Agent 3]: => FINISHED ALL! Turn 97
+[Agent 0]: IN NODE 0, turn 98
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 8, turn 98
+[Agent 1]: - navdata: [ 2 45 20 21 30 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 98
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 98
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 99
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 21, turn 99
+[Agent 1]: - navdata: [ 40 47 42 22 -2 -1 ]
+[Agent 1]: - navData += (ref-port #4 -> node 8)
+[Agent 1]: - forward (ref-port #5, eff-port #1)
+[Agent 2]: IN NODE 8, turn 99
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 99
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 100
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 30, turn 100
+[Agent 1]: - navdata: [ 22 2 3 8 21 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 100
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 100
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 101
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 21, turn 101
+[Agent 1]: - navdata: [ 40 47 42 22 8 -2 ]
+[Agent 1]: - navData += (ref-port #5 -> node 30)
+[Agent 1]: - complete, navdata: [ 40 47 42 22 8 30 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 101
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 101
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 102
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 102
+[Agent 1]: - navdata: [ 15 -2 -1 -1 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 21)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 102
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 102
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 103
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 35, turn 103
+[Agent 1]: - navdata: [ 7 9 29 40 38 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 103
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 103
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 104
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 104
+[Agent 1]: - navdata: [ 15 21 -2 -1 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 35)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 104
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 104
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 105
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 38, turn 105
+[Agent 1]: - navdata: [ 29 35 40 15 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 105
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 105
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 106
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 106
+[Agent 1]: - navdata: [ 15 21 35 -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #3 -> node 38)
+[Agent 1]: - forward (ref-port #4, eff-port #1)
+[Agent 2]: IN NODE 8, turn 106
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 106
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 107
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 47, turn 107
+[Agent 1]: - navdata: [ 21 31 40 42 1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 107
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 107
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 108
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 108
+[Agent 1]: - navdata: [ 15 21 35 38 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #4 -> node 47)
+[Agent 1]: - forward (ref-port #5, eff-port #1)
+[Agent 2]: IN NODE 8, turn 108
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 108
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 109
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 7, turn 109
+[Agent 1]: - navdata: [ 35 6 24 14 40 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 109
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 109
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 110
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 110
+[Agent 1]: - navdata: [ 15 21 35 38 47 -2 -1 ]
+[Agent 1]: - navData += (ref-port #5 -> node 7)
+[Agent 1]: - forward (ref-port #6, eff-port #1)
+[Agent 2]: IN NODE 8, turn 110
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 110
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 111
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 10, turn 111
+[Agent 1]: - navdata: [ 31 43 22 40 42 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 111
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 111
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 112
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 40, turn 112
+[Agent 1]: - navdata: [ 15 21 35 38 47 7 -2 ]
+[Agent 1]: - navData += (ref-port #6 -> node 10)
+[Agent 1]: - complete, navdata: [ 15 21 35 38 47 7 10 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 2]: IN NODE 8, turn 112
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 112
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 113
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 113
+[Agent 1]: - navdata: [ -2 -1 -1 -1 ]
+[Agent 1]: - navData += (ref-port #0 -> node 40)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 2]: IN NODE 8, turn 113
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 113
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 114
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 22, turn 114
+[Agent 1]: - navdata: [ 42 30 10 15 21 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 114
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 114
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 115
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 115
+[Agent 1]: - navdata: [ 40 -2 -1 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 22)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 2]: IN NODE 8, turn 115
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 115
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 116
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 49, turn 116
+[Agent 1]: - navdata: [ 3 15 29 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 116
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 116
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 117
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 117
+[Agent 1]: - navdata: [ 40 22 -2 -1 ]
+[Agent 1]: - navData += (ref-port #2 -> node 49)
+[Agent 1]: - forward (ref-port #3, eff-port #1)
+[Agent 2]: IN NODE 8, turn 117
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 117
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 118
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 38, turn 118
+[Agent 1]: - navdata: [ 29 35 40 15 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 2]: IN NODE 8, turn 118
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 118
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 119
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 119
+[Agent 1]: - navdata: [ 40 22 49 -2 ]
+[Agent 1]: - navData += (ref-port #3 -> node 38)
+[Agent 1]: - complete, navdata: [ 40 22 49 38 ]
+[Agent 1]: => FINISHED ALL! Turn 119
+[Agent 2]: IN NODE 8, turn 119
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 119
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 120
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 120
+[Agent 1]: - navdata: [ 40 22 49 38 ]
+[Agent 2]: IN NODE 8, turn 120
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 120
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+[Agent 0]: IN NODE 0, turn 121
+[Agent 0]: - navdata: [ 23 12 48 ]
+[Agent 1]: IN NODE 15, turn 121
+[Agent 1]: - navdata: [ 40 22 49 38 ]
+[Agent 2]: IN NODE 8, turn 121
+[Agent 2]: - navdata: [ 2 45 20 21 30 ]
+[Agent 3]: IN NODE 35, turn 121
+[Agent 3]: - navdata: [ 7 9 29 40 38 ]
+
+VisitsList : lastTime=121 visitListSize=488
+Metricas:
+ - desvio padrao dos intervalos: 14,397 
+ - intervalo quadratico medio: 15,473 
+ - intervalo maximo: 101,000 
+Metricas de coverage:
+ - coverage time: 61 
+ - exploration time: 119 

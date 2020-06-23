@@ -1,0 +1,69 @@
+
+#YAPS Experiment Format 1
+
+name "DIRECTED-FULLTIME"
+
+sim-time 5000
+(opt)sim-time-start-to-eval 0  #before this, visiting information is discarded for the metrics
+ 
+(opt)repeated-executions 2  #how many times each pair (map,initial-position) is re-executed -- pode ser dispensado, basta repetir posicoes iniciais abaixo...
+
+(opt)map-directory "maps" #relative to this directory; otherwise looks in current
+
+map "MAP_A" 
+map-societies-sizes: 1, 1, 3, 3, 9, 9
+map-societies-agents-attributes: name, start-node
+map-societies-agents-attributes-values
+	ag01 0
+	ag01 3
+	ag01 3 ag02 2 ag03 7  
+	ag01 3 ag02 2 ag03 7
+	ag01 4 ag02 3 ag03 2 ag04 7 ag05 4 ag06 7 ag07 6 ag08 8 ag09 3
+	ag01 1 ag02 2 ag03 3 ag04 2 ag05 7 ag06 6 ag07 3 ag08 4 ag09 5
+(opt)map-time-full 4000   #to give specific times for the map
+(opt)map-time-start-eval 0 
+
+
+
+
+
+#### alternativas (para pensar no futuro, pode complicar demais) ####
+
+map "MAP_B" 
+map-agents 1: 0
+map-agents 1: 3
+map-agents 5: "a" "c" "a" "b" "d"
+map-agents 5: 3 2 7 5 9
+map-agents-properties: "velocity", "energy"
+	0: 0.3 (em compr. da aresta) 14 (in turns)
+	1: 0.1 10
+    2: 1 inf (default)
+    3: 1 inf
+    4: 0.5 inf
+
+map-agents 11: 3 2 7 4 7 6 8 3 4 1 2
+map-agents 11: 1 0 9 2 3 0 5 4 6 8 7
+
+
+#ou
+
+map "MAP_C" 
+map-configuration: 1
+0
+map-configuration: 5
+"a" "c" "a" "b" "d"
+etc.
+
+
+#ou
+
+map "MAP_D"
+map-configurations: 2 agents
+  0: ...
+  1: ...
+map-configurations: 4 agents
+  0: ...
+  1: ...
+  2: ...
+  3: ...
+ 

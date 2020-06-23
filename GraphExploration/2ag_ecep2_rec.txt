@@ -1,0 +1,91 @@
+ALGORITHM: DfsExplorer-3-ECEP-v2-recursive
+
+[Agent 0]: START
+[Agent 1]: START
+[Agent 0]: IN NODE 2, turn 1
+[Agent 0]: - navdata: [ -1 ]
+[Agent 0]: - forward (ref-port #0, eff-port #0)
+[Agent 1]: IN NODE 4, turn 1
+[Agent 1]: - navdata: [ -1 ]
+[Agent 1]: - forward (ref-port #0, eff-port #0)
+[Agent 0]: IN NODE 1, turn 2
+[Agent 0]: - navdata: [ -1 -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 2)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 0, turn 2
+[Agent 1]: - navdata: [ -1 -1 -1 ]
+[Agent 1]: - first time
+[Agent 1]: - navData += (ref-port #0 -> node 4)
+[Agent 1]: - forward (ref-port #1, eff-port #1)
+[Agent 0]: IN NODE 3, turn 3
+[Agent 0]: - navdata: [ -1 -1 ]
+[Agent 0]: - first time
+[Agent 0]: - navData += (ref-port #0 -> node 1)
+[Agent 0]: - forward (ref-port #1, eff-port #1)
+[Agent 1]: IN NODE 1, turn 3
+[Agent 1]: - navdata: [ 2 -2 -1 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 0, turn 4
+[Agent 0]: - navdata: [ 4 -2 -1 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 0, turn 4
+[Agent 1]: - navdata: [ 4 -2 -1 ]
+[Agent 1]: - navData += (ref-port #1 -> node 1)
+[Agent 1]: - forward (ref-port #2, eff-port #1)
+[Agent 0]: IN NODE 3, turn 5
+[Agent 0]: - navdata: [ 1 -2 ]
+[Agent 0]: - navData += (ref-port #1 -> node 0)
+[Agent 0]: - complete, navdata: [ 1 0 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 3, turn 5
+[Agent 1]: - navdata: [ 1 0 ]
+[Agent 1]: - already visited
+[Agent 1]: - backtrack (eff-port #0)
+[Agent 0]: IN NODE 1, turn 6
+[Agent 0]: - navdata: [ 2 -2 -1 ]
+[Agent 0]: - navData += (ref-port #1 -> node 3)
+[Agent 0]: - forward (ref-port #2, eff-port #1)
+[Agent 1]: IN NODE 0, turn 6
+[Agent 1]: - navdata: [ 4 1 -2 ]
+[Agent 1]: - navData += (ref-port #2 -> node 3)
+[Agent 1]: - complete, navdata: [ 4 1 3 ]
+[Agent 1]: - backtrack (ref-port #0, eff-port #1)
+[Agent 0]: IN NODE 0, turn 7
+[Agent 0]: - navdata: [ 4 1 3 ]
+[Agent 0]: - already visited
+[Agent 0]: - backtrack (eff-port #0)
+[Agent 1]: IN NODE 4, turn 7
+[Agent 1]: - navdata: [ -2 ]
+[Agent 1]: - navData += (ref-port #0 -> node 0)
+[Agent 1]: - complete, navdata: [ 0 ]
+[Agent 1]: => FINISHED ALL! Turn 7
+[Agent 0]: IN NODE 1, turn 8
+[Agent 0]: - navdata: [ 2 3 -2 ]
+[Agent 0]: - navData += (ref-port #2 -> node 0)
+[Agent 0]: - complete, navdata: [ 2 3 0 ]
+[Agent 0]: - backtrack (ref-port #0, eff-port #1)
+[Agent 1]: IN NODE 4, turn 8
+[Agent 1]: - navdata: [ 0 ]
+[Agent 0]: IN NODE 2, turn 9
+[Agent 0]: - navdata: [ -2 ]
+[Agent 0]: - navData += (ref-port #0 -> node 1)
+[Agent 0]: - complete, navdata: [ 1 ]
+[Agent 0]: => FINISHED ALL! Turn 9
+[Agent 1]: IN NODE 4, turn 9
+[Agent 1]: - navdata: [ 0 ]
+[Agent 0]: IN NODE 2, turn 10
+[Agent 0]: - navdata: [ 1 ]
+[Agent 1]: IN NODE 4, turn 10
+[Agent 1]: - navdata: [ 0 ]
+
+VisitsList : lastTime=10 visitListSize=22
+Metricas:
+ - desvio padrao dos intervalos: 1,800 
+ - intervalo quadratico medio: 2,068 
+ - intervalo maximo: 8,000 
+Metricas de coverage:
+ - coverage time: 2 
+ - exploration time: 9 

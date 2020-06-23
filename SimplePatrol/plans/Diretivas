@@ -1,0 +1,35 @@
+
+diretivas:
+
+- criar uma ou duas classes MAP (uma para incluir dados dinamicos)
+  - pensar no código de carga dos mapas para experimentos...
+
+- criar um formato de arquivo de descrição de experimento?
+  (descreve tudo, exceto os agentes: mapas, quantidades de agentes, posições inicias de cada mapa, etc)
+  
+- criar um relatório de métricas de "tempo estável"  
+
+- preparar para local ou remoto (baixa)
+
+- fazer simulador local, apenas turn-based (alta)
+
+- criar visualizador local (média)
+  . independente de simulador (baixa)
+  . ou só para a versão local
+  
+- fazer simulator remoto, com comunicação simples xml-free (bem baixa)
+
+- pegar a taxonomia e deixar extensível para várias classificações
+
+- externamente, tudo terá "labels", mas internamente será um id inteiro para cada elemento -- será mesmo?
+  . pensar em relação às métricas...
+  
+- ambiente
+  . com ou sem custo e direção
+  . visitas com diferentes durações
+  . não fazer diâmicos (mas preparar a biblioteca)
+  . locomoção simples
+  
+- sociedade
+  . aberta
+  . todos os tipos de comunicação (flag em nó ou aresta e mensagens locais)
