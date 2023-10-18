@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src-jMetalCore"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/SimplePatrol"/>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/jMetal-core"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="lib/sqlite-jdbc-3.8.10.1.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PatrollingStrategies"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PatrollingStrategiesFromLiterature"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

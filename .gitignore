@@ -1,0 +1,36 @@
+# Eclipse
+.metadata/
+
+# Maven
+/target/
+
+# Gradle
+/build/
+
+# Logs
+*.log
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# NetBeans
+/nbproject/private/
+/build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Package Files #
+*.war
+*.ear
+
+# Directory target/ generated when maven builds
+target/
