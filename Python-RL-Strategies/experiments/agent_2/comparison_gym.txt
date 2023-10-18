@@ -1,0 +1,57 @@
+
+ACROBOT
+SUMMED PERFORMANCE INDICATORS
+ - beta_update=22 =>  normalized_sum=3.63  rank_sum=31.00
+ - beta_update=43 =>  normalized_sum=3.69  rank_sum=49.00
+ - beta_update=44 =>  normalized_sum=4.25  rank_sum=45.00
+ - beta_update=37 =>  normalized_sum=5.99  rank_sum=26.00 **
+ - beta_update=38 =>  normalized_sum=5.80  rank_sum=28.00 **
+ - beta_update=42 =>  normalized_sum=3.50  rank_sum=54.00
+ - beta_update=21 =>  normalized_sum=5.81  rank_sum=28.00 **
+ - beta_update=46 =>  normalized_sum=4.40  rank_sum=46.00 (ganhou do 45; empate com 44, cada um foi melhor em uma métrica)
+ - beta_update=45 =>  normalized_sum=1.51  rank_sum=67.00
+ - beta_update=41 =>  normalized_sum=4.89  rank_sum=40.00 *
+
+
+CARTPOLE
+SUMMED PERFORMANCE INDICATORS
+ - beta_update=37 =>  normalized_sum=3.60  rank_sum=51.00
+ - beta_update=21 =>  normalized_sum=8.04  rank_sum=18.00 **
+ - beta_update=44 =>  normalized_sum=3.11  rank_sum=59.00
+ - beta_update=42 =>  normalized_sum=4.13  rank_sum=48.00
+ - beta_update=38 =>  normalized_sum=3.70  rank_sum=54.00
+ - beta_update=22 =>  normalized_sum=2.52  rank_sum=61.00
+ - beta_update=45 =>  normalized_sum=3.31  rank_sum=60.00
+ - beta_update=41 =>  normalized_sum=5.89  rank_sum=33.00 *
+ - beta_update=43 =>  normalized_sum=3.61  rank_sum=56.00
+ - beta_update=46 =>  normalized_sum=3.89  rank_sum=52.00 (ganhou do 44 e 45)
+
+
+PATROL visited_idleness
+SUMMED PERFORMANCE INDICATORS
+ - beta_update=21 =>  normalized_sum=3.27  rank_sum=12.00 *
+ - beta_update=22 =>  normalized_sum=3.48  rank_sum=22.00 *
+ - beta_update=37 =>  normalized_sum=2.86  rank_sum=27.00
+ - beta_update=44 =>  normalized_sum=3.24  rank_sum=14.00 *
+ - beta_update=38 =>  normalized_sum=2.51  rank_sum=22.00
+ - beta_update=41 =>  normalized_sum=1.98  rank_sum=24.00
+ - beta_update=42 =>  normalized_sum=3.01  rank_sum= 9.00 **
+ - beta_update=43 =>  normalized_sum=2.14  rank_sum=24.00
+ - beta_update=45 =>  normalized_sum=0.51  rank_sum=35.00
+ - beta_update=46 =>  normalized_sum=2.93  rank_sum=21.00 (ganhou do 45, perdeu do 44)
+
+
+PATROL avg_idleness
+SUMMED PERFORMANCE INDICATORS
+ - beta_update=41 =>  normalized_sum=4.65  rank_sum=18.00 **
+ - beta_update=42 =>  normalized_sum=4.59  rank_sum=19.00 **
+ - beta_update=38 =>  normalized_sum=3.53  rank_sum=32.00
+ - beta_update=43 =>  normalized_sum=4.04  rank_sum=19.00 **
+ - beta_update=45 =>  normalized_sum=3.79  rank_sum=18.00 **
+ - beta_update=46 =>  normalized_sum=2.79  rank_sum=36.00
+ - beta_update=44 =>  normalized_sum=2.96  rank_sum=36.00
+ - beta_update=21 =>  normalized_sum=2.70  rank_sum=29.00
+ - beta_update=22 =>  normalized_sum=3.68  rank_sum=23.00
+ - beta_update=37 =>  normalized_sum=3.03  rank_sum=35.00
+
+ (Rever quantidades de passos - focar nos melhores?)
