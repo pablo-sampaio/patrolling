@@ -28,6 +28,12 @@
 
 # Diário de Desenvolvimento
 
+## 24/10/2023
+- Em 24/10: criei o ambiente para grafos com pesos! 
+  - setei action e observation spaces corretamente (o outro ambiente não tem!)
+  - testei, com sucesso
+- TODO: criar wrappers (ou antes: ajustar as normalizações do wrapper anterior?)
+
 ## Até 30/set/2023
 - Em 12/09: implementações
   - criei funções para simular agente treinado e receber as listas de nós visitados

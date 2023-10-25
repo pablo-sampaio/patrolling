@@ -30,6 +30,8 @@ class Graph:
                 for i in range(0, len(tokens), 2):
                     if int(tokens[i]) == -1:
                         break
+                    assert int(tokens[  i]) >= 0
+                    assert int(tokens[i+1]) >= 0
                     adj_v.append( (int(tokens[i]), int(tokens[i+1])) ) # attention: assuming weights are all integers
                 if len(adj_v) > self.max_out_degree:
                     self.max_out_degree = len(adj_v)
@@ -65,6 +67,14 @@ class Graph:
             if v == next:
                 return weight
         return float('inf')
+    
+    def get_max_weight(self):
+        max_weight = -1
+        for adj_v in self.adj:
+            for (v, weight) in adj_v:
+                if weight > max_weight:
+                    max_weight = weight
+        return max_weight
 
     def has_edge(self, start, next):
         for (v, w) in self.adj[start]:
