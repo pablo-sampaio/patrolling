@@ -3,6 +3,7 @@ import numpy as np
 import torch
 
 from patrolling_env.graph_env import GraphPatrolEnv
+from patrolling_env.graph_env_weighted import WeightedGraphPatrolEnv
 from patrolling_env.graph import Graph
 
 
@@ -23,6 +24,7 @@ class AbstractNodeStat:
         ''' Number of values that this class returns in get_stat())'''
         return 1
 
+# IDEA: alternative to node count (may become another feature): count visits in the last N rounds
 class NodeCount(AbstractNodeStat):
     def __init__(self):
         self.cnt = {}
@@ -212,7 +214,7 @@ class NeighborhoodFeaturesWrapper:
     the neighbor nodes. Some features are based on realtime search algorithms.
     '''
     def __init__(self, patrol_env, features='npilcd', normalization='min_max_scale'):
-        assert isinstance(patrol_env, GraphPatrolEnv)
+        assert isinstance(patrol_env, WeightedGraphPatrolEnv)
         self.wrapped_env = patrol_env
         for x in features:
             assert x in 'npilcdkmq', f"Invalid feature: {x}."
@@ -223,6 +225,8 @@ class NeighborhoodFeaturesWrapper:
         self.normalization = normalization
         self.node_stats_list = None
         self.features_str = features
+        self.graph = patrol_env.graph
+        self.max_neighbors = patrol_env.graph.get_max_out_degree()
         self._create_node_stats_objects()
 
     def _create_node_stats_objects(self):
@@ -256,56 +260,83 @@ class NeighborhoodFeaturesWrapper:
     def get_num_features_per_node(self):
         return self.feature_size_per_node
 
+    def _filter_nodes_with_agents(self, observation):
+        nodes = []
+        for ag in range(observation.shape[0]):
+            if observation[ag][2] == 0:
+                nodes.append(observation[ag][1])
+        return nodes
+
     def reset(self, **kwargs):
-        self.prev_agents_nodes = self.wrapped_env.reset(**kwargs)
-        
+        obs = self.wrapped_env.reset(**kwargs)
+        self.last_obs = obs
+       
         # reset the objects that compute the features
         self._create_node_stats_objects()
 
         # update stats for nodes where the agents started
         current_time = self.wrapped_env.curr_time
+        self.prev_agents_nodes = self._filter_nodes_with_agents(obs)
+        
         for agent_id, ag_node in enumerate(self.prev_agents_nodes):
             neighbors = self.wrapped_env.graph.get_neighbors(ag_node)
             for node_stat in self.node_stats_list:
                 node_stat.update_on_arrival(ag_node, neighbors, current_time, agent_id)
         
-        features = self._get_features(self.wrapped_env.graph, self.prev_agents_nodes)
+        features = self._get_features(obs)
         return features
 
     def step(self, actions):
-        graph = self.wrapped_env.graph
+        graph = self.graph
 
         # update stats for nodes which the agents are leaving
+        # (just for agents really placed in the nodes, and that are not crossing an edge)
         for ag_id, ag_node in enumerate(self.prev_agents_nodes):
             neighbors = graph.get_neighbors(ag_node)
             for node_stat in self.node_stats_list:
                 node_stat.update_on_leave(ag_node, neighbors)
 
         # a step in the real environment
-        curr_agents_nodes, r, done, info = self.wrapped_env.step(actions)
+        obs, r, done, info = self.wrapped_env.step(actions)
+        self.last_obs = obs
+
+        curr_agents_nodes = self._filter_nodes_with_agents(obs)
 
         # update stats for nodes where the agents arrived
+        # (just for agents that really arrived to nodes)
         current_time = self.wrapped_env.curr_time
         for ag_id, ag_node in enumerate(curr_agents_nodes):
             neighbors = graph.get_neighbors(ag_node)
             for node_stat in self.node_stats_list:
                 node_stat.update_on_arrival(ag_node, neighbors, current_time, ag_id)
         
-        features = self._get_features(graph, curr_agents_nodes)
         self.prev_agents_nodes = curr_agents_nodes
 
+        features = self._get_features(obs)
         return features, r, done, info
-    
-    def _get_features(self, graph, agents_nodes):
-        max_neighbors = graph.get_max_out_degree()
+
+    def _get_agent_neighbors(self, observation, ag_id):
+        '''
+        Retorna os "nós vizinhos" do agente, em *qualquer* situação. Esta função lida com o caso especial 
+        de quando o agente não está no nó, mas, sim, atravessando uma aresta. Neste caso, o nó de partida
+        é retornado como primeiro vizinho; e o nó de destino, como segundo vizinho.
+        '''
+        if observation[ag_id][2] == 0:
+            return self.graph.get_neighbors(observation[ag_id][1])  # returns the neighbors of the destiny node (index 1)
+        else:
+            # in this order: the origin (index 0) and the destiny nodes (index 1)
+            return [ observation[ag_id][0], observation[ag_id][1] ]
+
+    def _get_features(self, observation):
+        num_agents = observation.shape[0]
 
         # ordem simplificada (de BCHW): Agents (~Batch), Features (~Channels), Neighbors (~Height or Width)
-        size = ( len(agents_nodes), self.feature_size_per_node, max_neighbors )
+        size = ( num_agents, self.feature_size_per_node, self.max_neighbors )
         x = torch.zeros(size=size) 
 
         current_time = self.wrapped_env.curr_time
-        for ag_id, node in enumerate(agents_nodes):
-            neighbors = graph.get_neighbors(node)
+        for ag_id, node in enumerate(range(num_agents)):
+            neighbors = self._get_agent_neighbors(observation, ag_id)
             feature_start = 0
             for node_stat in self.node_stats_list:
                 fsize = node_stat.get_size_per_node()
